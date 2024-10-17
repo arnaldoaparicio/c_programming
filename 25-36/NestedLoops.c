@@ -14,9 +14,14 @@ int main(){
     printf("\nEnter # of columns: ");
     scanf("%d", &columns);
 
+    while((getchar()) != '\n'); //clears the input buffers
+
+    printf("Enter a symbol to use: ");
+    scanf("%c", &symbol);
+
     for(int i = 1; i <= rows; i++){
         for(int j = 1; j <= columns; j++){
-            printf("%d", j);
+            printf("%c", symbol);
 
         }
         printf("\n");
